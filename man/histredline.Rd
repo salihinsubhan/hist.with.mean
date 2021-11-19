@@ -19,4 +19,5 @@ This function creates a histogram of a numeric variable and adds a red line deno
 }
 \examples{
 histredline(mtcars, mpg)
+histredline(iris, Sepal.Length)
 }
