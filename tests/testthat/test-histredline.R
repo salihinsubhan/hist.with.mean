@@ -1,3 +1,9 @@
 test_that("histogram with mean line is generated properly", {
-  expect_equal(2 * 2, 4)
+  data(iris)
+  p <- histredline(iris, Sepal.Length)
+  expect_true(is.ggplot(p))
+  expect_error(print(histredline(iris, Species)), NA)
+  xx
+  rm(iris)
+  rm(p)
 })

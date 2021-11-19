@@ -10,6 +10,7 @@
 #'
 #' @examples
 #' histredline(mtcars, mpg)
+#' histredline(iris, Sepal.Length)
 #' @importFrom ggplot2 ggplot aes geom_histogram geom_vline
 histredline <- function(data, column) {
   column<-eval(substitute(column),data, parent.frame())
