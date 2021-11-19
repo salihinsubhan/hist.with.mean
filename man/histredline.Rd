@@ -4,12 +4,12 @@
 \alias{histredline}
 \title{Histogram with red mean line}
 \usage{
-histredline(x, y)
+histredline(data, column)
 }
 \arguments{
-\item{x}{Dataset which contains the numeric variable}
+\item{data}{Dataset which contains the numeric variable}
 
-\item{y}{Variable used to generate the histogram}
+\item{column}{Variable used to generate the histogram}
 }
 \value{
 A histogram with a red line denoting the mean
