@@ -12,15 +12,16 @@
 #' histredline(mtcars, mpg)
 #' @importFrom ggplot2 ggplot aes geom_histogram geom_vline
 histredline <- function(x, y) {
+  calc <-
   if(!is.data.frame(x)) {
     stop("x should be a dataframe!")
   }
-  if(!is.numeric(x$y)) {
+  if(!is.numeric({{ y }})) {
     stop("y should be numeric!")
   }
-  mean.y <- mean(x$y, na.rm=T)
+  mean.y <- mean({{ y }}, na.rm=T)
   x %>%
-    ggplot2::ggplot(aes(x$y)) +
+    ggplot2::ggplot(aes({{ y }})) +
     ggplot2::geom_histogram() +
     ggplot2::geom_vline(aes(mean.y), colour = "red")
 }
