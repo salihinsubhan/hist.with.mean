@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' histredline(mtcars, mpg)
-#' @export
+#' @importFrom ggplot2 ggplot aes geom_histogram geom_vline
 histredline <- function(x, y) {
   if(!is.data.frame(x)) {
     stop("x should be a dataframe!")
@@ -19,7 +19,7 @@ histredline <- function(x, y) {
     stop("y should be numeric!")
   }
   x %>%
-    ggplot(aes(y)) +
-    geom_histogram() +
-    geom_vline(aes(mean(y, na.rm=T)), colour = "red")
+    ggplot2::ggplot(aes(y)) +
+    ggplot2::geom_histogram() +
+    ggplot2::geom_vline(aes(mean(y, na.rm=T)), colour = "red")
 }
