@@ -9,6 +9,8 @@
 #' @export
 #'
 #' @examples
+#' histredline(mtcars, mpg)
+#' @export
 histredline <- function(x, y) {
   if(!is.data.frame(x)) {
     stop("x should be a dataframe!")
