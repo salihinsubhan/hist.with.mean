@@ -19,7 +19,7 @@ histredline <- function(data, column) {
     stop("column should be numeric!")
   }
   mean.col <- mean(data[[column]], na.rm=T)
-  x %>%
+  data %>%
     ggplot2::ggplot(aes(data[[column]])) +
     ggplot2::geom_histogram() +
     ggplot2::geom_vline(aes(xintercept = mean.col), colour = "red")
