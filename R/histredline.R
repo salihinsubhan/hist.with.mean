@@ -1,9 +1,11 @@
 #' Histogram with red mean line
 #'
-#' @param x
-#' @param y
+#' This function creates a histogram of a numeric variable and adds a red line denoting the position of the mean in the distribution of values of the variable.
 #'
-#' @return
+#' @param x Dataset which contains the numeric variable
+#' @param y Variable used to generate the histogram
+#'
+#' @return A histogram with a red line denoting the mean
 #' @export
 #'
 #' @examples
