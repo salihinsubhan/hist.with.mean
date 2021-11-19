@@ -18,3 +18,4 @@ URL: https://github.com/salihinsubhan/hist.with.mean
 BugReports: https://github.com/salihinsubhan/hist.with.mean/issues
 Imports: 
     magrittr
+    ggplot2
