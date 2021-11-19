@@ -18,8 +18,9 @@ histredline <- function(x, y) {
   if(!is.numeric(y)) {
     stop("y should be numeric!")
   }
+  mean.y <- mean(y, na.rm=T)
   x %>%
     ggplot2::ggplot(aes(y)) +
     ggplot2::geom_histogram() +
-    ggplot2::geom_vline(aes(mean(y, na.rm=T)), colour = "red")
+    ggplot2::geom_vline(aes(mean.y), colour = "red")
 }
