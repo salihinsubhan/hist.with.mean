@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "salihinsubhan@gmail.com",
            comment = c(ORCID = "0000-0001-6716-4470"))
-Description: Making histograms is never easier! Just provide the dataset and variable, and the function will help you create a histogram with a neat little red line denoting the position of the mean within the ditribution.
+Description: Making histograms is never easier! Just provide the dataset and variable, and the function will help you create a histogram with a neat little red line denoting the position of the mean within the distribution.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
