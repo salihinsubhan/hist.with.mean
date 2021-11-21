@@ -8,8 +8,7 @@ Authors@R:
            email = "salihinsubhan@gmail.com",
            comment = c(ORCID = "0000-0001-6716-4470"))
 Description: Making histograms is never easier! Just provide the dataset and variable, and the function will help you create a histogram with a neat little red line denoting the position of the mean within the ditribution.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
